@@ -1,3 +1,147 @@
-body{
-    /*background-image: ;*/
+* {
+    /*全部无边界*/
+    margin: 0;
+}
+
+/*背景图*/
+#backgroundImage {
+    width: 1080px;
+    height: 720px;
+    background-image: url("../images/WanlinPics/background0.jpg");
+    background-repeat: no-repeat;
+    background-size: 1080px 720px;
+    margin: 0 auto;
+}
+
+/*主面板*/
+#introduction {
+    position: relative;
+    width: 1080px;
+    height: 720px;
+}
+
+/*文本框*/
+#introductionText {
+    width: 500px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 150px 290px 0 290px;
+    outline: none;
+    font-size: 50px;
+    font-family: 华文楷体, sans-serif;
+    border: rgba(255, 255, 255, 0);
+    overflow: hidden;
+    resize: none;
+    border-radius: 20px;
+}
+
+/*为图片属性设置为绝对位置*/
+#introduction img {
+    position: absolute;
+}
+
+/*单独设置fox位置*/
+#fox0 {
+    width: 70px;
+    top: 350px;
+    left: 200px;
+    display: none;
+    /*filter: grayscale(80%);*/
+}
+
+#fox1 {
+    width: 50px;
+    top: 460px;
+    left: 1000px;
+    display: none;
+}
+
+#fox2 {
+    width: 50px;
+    top: 500px;
+    left: 80px;
+    display: none;
+}
+
+#fox3 {
+    width: 50px;
+    top: 330px;
+    left: 480px;
+    display: none;
+}
+
+/*为所有按钮设置样式*/
+#introduction input {
+    border-radius: 10px;
+    border: 0;
+}
+
+/*全景按钮*/
+#panorama {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    font-family: 华文楷体, sans-serif;
+    top: 230px;
+    left: 440px;
+    display: none;
+}
+
+/*掠影按钮*/
+#glimpse {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    font-family: 华文楷体, sans-serif;
+    top: 330px;
+    left: 440px;
+    display: none;
+}
+
+/*返回地图按钮*/
+#returnMap {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    font-family: 华文楷体, sans-serif;
+    top: 430px;
+    left: 440px;
+    display: none;
+}
+
+/*全景div*/
+#panoramaFrame {
+    position: absolute;
+    width: 760px;
+    height: 550px;
+    display: none;
+    left: 160px;
+}
+
+/*全景iframe*/
+#panoramaFrame iframe {
+    position: absolute;
+    width: 760px;
+    height: 680px;
+    top: -130px;
+}
+
+/*掠影div*/
+#glimpseFrame {
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+    display: none;
+    left: 40px;
+}
+
+/*掠影iframe*/
+#glimpseFrame iframe {
+    position: absolute;
+    width: 1000px;
+    height: 700px;
+    top: -300px;
 }

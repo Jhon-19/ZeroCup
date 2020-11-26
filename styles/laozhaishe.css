@@ -1,7 +1,9 @@
 *{
+    /*全部边界为0*/
     margin: 0;
 }
 
+/*背景图*/
 #backgroundImage{
     width: 1080px;
     height: 720px;
@@ -11,18 +13,13 @@
     margin: 0 auto;
 }
 
-/*#introduction{*/
-/*    width: 300px;*/
-/*    height: 600px;*/
-/*    margin: 20px 400px 40px 400px;*/
-/*    background-color: white;*/
-/*}*/
-
+/*主面板*/
 #introduction{
     width: 1080px;
     height: 720px;
 }
 
+/*文本框*/
 #introductionText{
     width: 500px;
     height: 400px;
@@ -31,12 +28,13 @@
     outline: none;
     font-size: 30px;
     font-family: 华文楷体, sans-serif;
-}
-
-#introduction input{
     border: rgba(255, 255, 255, 0);
+    resize: none;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
+/*fox图标*/
 #fox{
     /*width: 120px;*/
     /*height: 150px;*/
@@ -44,4 +42,16 @@
     height: 0;
     margin: 10px 0 0 100px;
     position: relative;
+}
+
+#returnMap{
+    border-radius: 10px;
+    border: 0;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    font-family: 华文楷体, sans-serif;
+    top: 650px;
+    left: 950px;
 }

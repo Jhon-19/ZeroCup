@@ -22,24 +22,30 @@ var introduction3 = '别看老斋舍历史悠久，现代化生活设施可不�
     '老斋舍使用了中央空调，保证了居住的舒适度。' +
     '\n水房、浴室和卫生间一应俱全，浴室和卫生间分区设计，为学生生活增添便利。\n'
 
-var introductions = new Array(introduction0, introduction1, introduction2, introduction3)
+var introductions = [introduction0, introduction1, introduction2, introduction3]
 
 //fox图片路径
 var path = '../images/LaozhaishePics/'
 
 //背景音乐对象
 var bgm
+//fox图标
+var fox
+//text文本
+var introduceText
+//返回地图按钮
+var returnMap
 
 //修改fox的动画
 function changeFox(index) {
     //让上一个fox 1s内逐渐消失
-    $('#fox').animate({
+    fox.animate({
         opacity: 0
     }, 1000)
     //上一个fox消失后，1s内逐渐显示下一个fox
     setTimeout(function (){
-        $('#fox').attr('src', path + 'fox' + index + '.jpg')
-        $('#fox').animate({
+        fox.attr('src', path + 'fox' + index + '.jpg')
+        fox.animate({
             opacity: 1
         }, 1000)
     }, 1000)
@@ -51,11 +57,11 @@ function loadText(text) {
     var str = ''
     //每20ms加载一个字
     var id = setInterval(function (){
-        if (index == text.length){
+        if (index === text.length){
             clearInterval(id)
         }else{
             str += text.charAt(index)
-            $('#introductionText').val(str)
+            introduceText.val(str)
         }
         index++
     }, 20)
@@ -73,9 +79,9 @@ function start(){
     var index = 0
     function introduce() {
         // 预置介绍性文字
-        if (index == 0) {
-            $('#introductionText').val('')
-            $('#introductionText').css('font-size', '30px')
+        if (index === 0) {
+            introduceText.val('')
+            introduceText.css('font-size', '30px')
             loadText(introductions[0])
         }
 
@@ -99,26 +105,37 @@ function start(){
 $(document).ready(
     function () {
         var isStart = false
+
+        //初始化元素
+        fox = $('#fox')
+        introduceText = $('#introductionText')
+        returnMap = $('#returnMap')
         //第一只fox 2s内逐渐进入
-        $('#fox').animate(
+        fox.animate(
             {
                 width: '120px',
                 height: '150px'
             }, 2000)
         bgm = $('#bgm')[0]//获取bgm对象
-        $('#introductionText').val(tip)//显示提示文字
-        $('#introductionText').css('font-size', '50px')//设置提示文字字体
+        introduceText.val(tip)//显示提示文字
+        introduceText.css('font-size', '50px')//设置提示文字字体
         //修改鼠标光标位置
-        $('#introductionText').hover(function (){
-            $('#introductionText').css('cursor', 'pointer')
+        introduceText.hover(function (){
+            introduceText.css('cursor', 'pointer')
         }, function (){
-            $('#introductionText').css('cursor', 'default')
+            introduceText.css('cursor', 'default')
         })
         //为文本添加点击一次事件，触发则开始介绍
-        $('#introductionText').click(function (){
+        introduceText.click(function (){
             if(!isStart){
+                isStart = true
                 start()
             }
+        })
+
+        //为returnMap添加返回功能
+        returnMap.click(function (){
+            $(location).attr('href', '#')
         })
     }
 )
