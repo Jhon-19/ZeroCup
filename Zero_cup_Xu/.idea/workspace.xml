@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e82b5ce-6264-4616-a22b-9a2baf198eb9" name="Default Changelist" comment="" />
+    <list default="true" id="8e82b5ce-6264-4616-a22b-9a2baf198eb9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/laotu.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/laotu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/vue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/laotu.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/laotu.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,10 +42,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1l2gXSwgSzjbEL6tDLqnTwgRUBU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -61,13 +88,29 @@
       <updated>1606800639491</updated>
       <workItem from="1606800640551" duration="31554000" />
       <workItem from="1606837654372" duration="760000" />
+      <workItem from="1606839038655" duration="111000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="451" y="227" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606839079433">
+      <screen x="0" y="0" width="1440" height="960" />
+    </state>
+    <state x="451" y="227" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.960@0.0.1440.960" timestamp="1606839079433" />
     <state x="447" y="221" key="run.anything.popup" timestamp="1606835910778">
       <screen x="0" y="0" width="1707" height="960" />
     </state>
