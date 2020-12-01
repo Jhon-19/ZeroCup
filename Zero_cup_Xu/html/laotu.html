@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="../resource/vue.js"></script>
+    <script type="text/javascript" src="../resource/jquery.js"></script>
+    <script type="text/javascript" src="../jquery/laotu.js"></script>
+    <link type="text/css" rel="stylesheet" href="../styles/laotu.css"/>
+</head>
+
+<body>
+<div id="app">
+    <div id="laoTuBackground">
+        <div id="box">
+            <textarea id="introductionText" readonly></textarea>
+            <input type="button" id="enterBut" value="进入图书馆" onclick=window.open("laotu2.html",'_self')>
+        </div>
+        <img id="fox" src="../images/laotu/fox1.jpg" alt="fox"/>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            msg: 'Hello Vue'
+        },
+        created(){
+            //document.getElementById("fox").style.transform= "rotate3d(1,1,2,360deg)"
+        },
+        methods: {
+        }
+    });
+</script>
+</body>
+
+</html>

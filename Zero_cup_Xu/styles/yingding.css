@@ -1,0 +1,104 @@
+#yingDingBackground {
+    background-image: url("../images/yingding/back.jpg");
+    width: 1080px;
+    height: 720px;
+    background-repeat: no-repeat;
+    background-size: 1080px 720px;
+    margin: 0 auto;
+}
+/*文本框*/
+#introductionText{
+    width: 500px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 150px 290px 0 290px;
+    outline: none;
+    padding: 20px; line-height: 1.5;
+    font-size: 30px;
+    font-family: 华文楷体, sans-serif;
+    border: rgba(255, 255, 255, 0);
+    resize: none;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/*游戏盒*/
+#gameBox {
+    width: 1080px;
+    height: 720px;
+    position: absolute;
+    top: 0px;
+    margin: auto;
+    /* 起初不可见 */
+    visibility: hidden;
+    perspective: 500px;
+}
+/* 花瓣 */
+.flower {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    visibility: inherit;
+    /*动画时间*/
+    transition: all 1s;
+    transition-delay: 100ms;
+}
+#f1{left: 100px; bottom: 150px} #f1:hover {transform: rotate(720deg);}
+#f2{left: 220px; bottom: 120px} #f2:hover {transform: translateZ(30px);}
+#f3{left: 380px; bottom: 240px} #f3:hover {transform: translate(50px) rotate(20deg) scale(0.6) skew(30deg);}
+#f4{left: 600px; bottom: 245px} #f4:hover {transform: rotate(360deg);}
+#f5{left: 780px; bottom: 70px}  #f5:hover {transform: skew(30deg);}
+#f6{left: 890px; bottom: 160px} #f6:hover {transform: scale(1.5);}
+
+#fox{
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    left: 300px;
+    bottom: 2px;
+}
+
+#answerBox {
+    width: 300px;
+    height: 130px;
+    position: absolute;
+    left: 430px;
+    bottom: 90px;
+    border-radius: 20px;
+    background-color: #F3F7F2;
+}
+#bubbleText{
+    width: 270px;
+    height: 70px;
+    padding-left: 20px; padding-top: 10px; line-height: 1.5;
+    font-size: 20px;
+    font-family: 华文楷体, sans-serif;
+    border: none;
+    border-radius: 20px;
+    resize: none;
+    background-color: #F3F7F2;
+}
+#answer{
+    width: 250px;
+    height: 30px;
+    margin-left: 25px;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+}
+
+/* 返回地图按钮 */
+#returnMap{
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    /* 位置 */
+    position: absolute;
+    bottom: 80px;
+    left: 440px;
+
+    font-size: 30px;
+    font-family: 华文楷体, sans-serif;
+    box-shadow: 0px 0px 5px 5px #50534A,0px 0px 15px 10px #8F8C8D;
+    visibility: hidden;
+}
