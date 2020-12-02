@@ -51,6 +51,10 @@ $(document).ready(
             },3000)
         })
 
+        //为returnMap添加返回功能
+        returnMap.click(function (){
+            $(location).attr('href', '#')
+        })
 
     }
 )

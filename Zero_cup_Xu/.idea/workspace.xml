@@ -20,10 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e82b5ce-6264-4616-a22b-9a2baf198eb9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/html/firstPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/firstPage/back.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/firstPage/back2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/yingding/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/firstPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/laotu.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/laotu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/vue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/laotu2.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/laotu2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/yingding.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/yingding.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/yingding/back.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery/laotu2.js" beforeDir="false" afterPath="$PROJECT_DIR$/jquery/laotu2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery/yingding.js" beforeDir="false" afterPath="$PROJECT_DIR$/jquery/yingding.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/laotu.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/laotu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/laotu2.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/laotu2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/yingding.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/yingding.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +48,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -49,12 +61,15 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1l2gXSwgSzjbEL6tDLqnTwgRUBU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -70,13 +85,27 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\Desktop\Zero_cup_Xu\html" />
-      <recent name="C:\Users\user\Desktop\Zero_cup_Xu\images\laotu" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\Zero_cup_Xu\resource" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Fighting\Web\ZeroCup\Zero_cup_Xu\images\firstPage" />
+      <recent name="C:\Users\user\Desktop\Zero_cup_Xu\html" />
+      <recent name="C:\Users\user\Desktop\Zero_cup_Xu\images\laotu" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -89,6 +118,9 @@
       <workItem from="1606800640551" duration="31554000" />
       <workItem from="1606837654372" duration="760000" />
       <workItem from="1606839038655" duration="111000" />
+      <workItem from="1606839168709" duration="342000" />
+      <workItem from="1606865637211" duration="2515000" />
+      <workItem from="1606869180566" duration="5265000" />
     </task>
     <servers />
   </component>
@@ -105,8 +137,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="467" y="281" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606870003283">
+      <screen x="0" y="0" width="1440" height="960" />
+    </state>
+    <state x="467" y="281" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.960@0.0.1440.960" timestamp="1606870003283" />
     <state x="451" y="227" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606839079433">
       <screen x="0" y="0" width="1440" height="960" />
     </state>

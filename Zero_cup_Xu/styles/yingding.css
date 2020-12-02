@@ -1,10 +1,5 @@
 #yingDingBackground {
-    background-image: url("../images/yingding/back.jpg");
-    width: 1080px;
-    height: 720px;
-    background-repeat: no-repeat;
-    background-size: 1080px 720px;
-    margin: 0 auto;
+    background-image: url("../images/yingding/back.png");
 }
 /*文本框*/
 #introductionText{
@@ -46,7 +41,7 @@
 #f1{left: 100px; bottom: 150px} #f1:hover {transform: rotate(720deg);}
 #f2{left: 220px; bottom: 120px} #f2:hover {transform: translateZ(30px);}
 #f3{left: 380px; bottom: 240px} #f3:hover {transform: translate(50px) rotate(20deg) scale(0.6) skew(30deg);}
-#f4{left: 600px; bottom: 245px} #f4:hover {transform: rotate(360deg);}
+#f4{left: 600px; bottom: 145px} #f4:hover {transform: rotate(360deg);}
 #f5{left: 780px; bottom: 70px}  #f5:hover {transform: skew(30deg);}
 #f6{left: 890px; bottom: 160px} #f6:hover {transform: scale(1.5);}
 

@@ -10,6 +10,7 @@ var gameBox
 var fox
 // 花
 var f1
+var f4
 // 答案区域
 var anserBox
 // 气泡中的文本
@@ -95,7 +96,8 @@ $(document).ready(
         var isStart = false
         gameBox = $('#gameBox')
         fox = $('#fox')
-        f1=$('#f1');
+        f1 = $('#f1')
+        f4 = $('#f4')
         anserBox = $('#answerBox')
         bubble = $('#bubbleText')
         returnMap = $('#returnMap')
@@ -124,6 +126,9 @@ $(document).ready(
                 loadText(bubble, "太大了哦！")
             }else if (num < 6){
                 loadText(bubble, "太小了哦！")
+                setTimeout(function (){
+                    f4.css('transform', 'translate(0px,-100px)')
+                }, 200)
             }else {
                 loadText(bubble, "你答对啦！")
                 setTimeout(function (){
@@ -153,6 +158,11 @@ $(document).ready(
                     }, 1500)
                 },5000)
             }
+        })
+
+        //为returnMap添加返回功能
+        returnMap.click(function (){
+            $(location).attr('href', '#')
         })
     }
 )

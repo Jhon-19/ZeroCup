@@ -1,11 +1,5 @@
 #laoTuBackground2 {
     background-image: url("../images/laotu/back2.jpg");
-    width: 1080px;
-    height: 720px;
-    background-repeat: no-repeat;
-    background-size: 1080px 720px;
-    margin: 0 auto;
-    perspective: 500px;
 }
 #bookshelf {
     background-image: url("../images/laotu/bookshelf.jpg");
