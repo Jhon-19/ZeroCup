@@ -15,6 +15,7 @@
 
 /*主面板*/
 #introduction{
+    position: relative;
     width: 1080px;
     height: 720px;
 }
@@ -44,6 +45,7 @@
     position: relative;
 }
 
+/*返回按钮*/
 #returnMap{
     border-radius: 10px;
     border: 0;
@@ -53,5 +55,5 @@
     font-size: 30px;
     font-family: 华文楷体, sans-serif;
     top: 650px;
-    left: 950px;
+    left: 750px;
 }

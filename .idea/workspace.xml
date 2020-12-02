@@ -3,14 +3,28 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="921b8bc1-3416-456a-8b63-b616acfddb7e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmls/laozhaishe.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmls/laozhaishe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmls/wanlin.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmls/wanlin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/laozhaishe.js" beforeDir="false" afterPath="$PROJECT_DIR$/jquery/laozhaishe.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/laozhaishe.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/laozhaishe.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/wanlin.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/wanlin.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +60,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.laozhaishe.html">
+  <component name="RunManager" selected="JavaScript Debug.main.html">
     <configuration name="laozhaishe.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ZeroCup/htmls/laozhaishe.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="main.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ZeroCup/htmls/main.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="wanlin.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ZeroCup/htmls/wanlin.html" useBuiltInWebServerPort="true">
@@ -58,6 +75,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.main.html" />
         <item itemvalue="JavaScript Debug.laozhaishe.html" />
         <item itemvalue="JavaScript Debug.wanlin.html" />
         <item itemvalue="Node.js.wanlin.js" />
@@ -84,17 +102,35 @@
       <workItem from="1606315903498" duration="1140000" />
       <workItem from="1606355508400" duration="6833000" />
       <workItem from="1606370092714" duration="26490000" />
+      <workItem from="1606546780191" duration="14000" />
+      <workItem from="1606571696632" duration="326000" />
+      <workItem from="1606866770767" duration="3318000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606390723808">
+    <state x="379" y="163" key="#Notifications" timestamp="1606546785601">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1606390723808" />
+    <state x="379" y="163" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1606546785601" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606867841340">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1606867841340" />
     <state x="76" y="42" key="#xdebugger.evaluate" timestamp="1606092774038">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -103,22 +139,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="81" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606052316662" />
-    <state width="617" height="166" key="GridCell.Tab.0.bottom" timestamp="1606399736459">
+    <state width="1259" height="163" key="GridCell.Tab.0.bottom" timestamp="1606870126249">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="617" height="166" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1606399736459" />
-    <state width="617" height="166" key="GridCell.Tab.0.center" timestamp="1606399736458">
+    <state width="1259" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1606870126249" />
+    <state width="1259" height="163" key="GridCell.Tab.0.center" timestamp="1606870126248">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="617" height="166" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1606399736458" />
-    <state width="617" height="166" key="GridCell.Tab.0.left" timestamp="1606399736458">
+    <state width="1259" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1606870126248" />
+    <state width="1259" height="163" key="GridCell.Tab.0.left" timestamp="1606870126248">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="617" height="166" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1606399736458" />
-    <state width="617" height="166" key="GridCell.Tab.0.right" timestamp="1606399736458">
+    <state width="1259" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1606870126248" />
+    <state width="1259" height="163" key="GridCell.Tab.0.right" timestamp="1606870126248">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="617" height="166" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1606399736458" />
+    <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1606870126248" />
     <state width="1259" height="195" key="GridCell.Tab.1.bottom" timestamp="1606035951940">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -167,10 +203,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="619" height="198" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1606033231798" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1606358296838">
+    <state x="142" y="0" key="SettingsEditor" timestamp="1606571767822">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1606358296838" />
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1606571767822" />
     <state x="185" y="69" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1606035969189">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
