@@ -1,100 +1,21 @@
 <!DOCTYPE html>
-<html lang="zh-cn" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>主页</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>武大探险</title>
     <link rel="Shortcut Icon" href="https://s1.ax1x.com/2020/03/27/GPH9xO.png" type="image/png" />
-    <!--[if lt IE 9]>
-    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/global.css"/>
+    <link type="text/css" rel="stylesheet" href="styles/firstPage.css"/>
 </head>
-<body style="margin-top:50px;">
-<div class="container" style="background: rgba(255,255,255,0.5);padding:50px;">
-    <h1>主页</h1>
-    <div>
-        <h2>数据获取</h2>
-        <div class="form-horizontal">
-            <div class="form-group">
-                <label for="type">地点</label>
-                <select id="type" name="type" class="form-control">
-                    <option value="paiFang">牌坊</option>
-                    <option value="aoChang">奥场</option>
-                    <option value="yingDing">樱顶</option>
-                    <option value="laoTu">老图书馆</option>
-                    <option value="wanLin">万林艺术博物馆</option>
-                    <option value="laoZhaiShe">老斋舍</option>
-                </select>
-                <button class="btn btn-primary" onclick="get()">获取</button>
-            </div>
-            <div class="form-group">
-                <button class="btn btn-primary" onclick="getall()">全部获取</button>
-            </div>
+<body>
+    <div id="firstBackground" class="background">
+        <div id="fontBox">
+            <span id="wu" class="title">武</span>
+            <span id="da" class="title">大</span>
+            <span id="tan" class="title">探</span>
+            <span id="xian" class="title">险</span>
         </div>
+        <input type="button" id="startBut" value="开始探险" onclick=window.open("htmls/main.html",'_self')>
     </div>
-    <div style="margin-top: 20px;">
-        <h2>设定为已完成</h2>
-        <div class="form-horizontal">
-            <div class="form-group">
-                <label for="type2">地点</label>
-                <select id="type2" name="type" class="form-control">
-                    <option value="paiFang">牌坊</option>
-                    <option value="aoChang">奥场</option>
-                    <option value="yingDing">樱顶</option>
-                    <option value="laoTu">老图书馆</option>
-                    <option value="wanLin">万林艺术博物馆</option>
-                    <option value="laoZhaiShe">老斋舍</option>
-                </select>
-                <button class="btn btn-warning" onclick="set()">设置</button>
-            </div>
-        </div>
-    </div>
-    <a class="btn btn-danger" href="/logout">注销</a>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-    function get(){
-        $.ajax({
-            method:"post",
-            url:"getdata",
-            data:{
-                "type":document.getElementById("type").value
-            },
-            success:function(data){
-                if(data==="true")
-                    alert("该地点已通关")
-                else if(data==="false")
-                    alert("该地点未通过")
-                else
-                    alert("后台返回了无效结果："+data)
-            }
-        });
-    }
-    function getall(){
-        $.ajax({
-            method:"post",
-            url:"getdata",
-            success:function(data){
-                alert(data);
-            }
-        });
-    }
-    function set(){
-        $.ajax({
-            method:"post",
-            url:"setdata",
-            data:{
-                "type":document.getElementById("type2").value
-            },
-            success:function(data){
-                alert(data)
-            }
-        });
-    }
-</script>
 </body>
 </html>

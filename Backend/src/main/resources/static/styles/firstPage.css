@@ -1,0 +1,83 @@
+#firstBackground {
+    background-image: url("../images/firstPage/back2.jpg");
+}
+/* 标题盒子 */
+#fontBox {
+    width: 800px;
+    height: 200px;
+    /*background-color: #3E3734;*/
+    position: absolute;
+    margin: 60px 140px;
+}
+.title{
+    font-weight: bolder;
+    color: #3E3734;
+    font-size: 60px;
+    font-family: '黑体',sans-serif;
+    text-shadow: 5px 5px 1px #6D6473;
+}
+#wu{
+    position: absolute;
+        left: 70px;
+        bottom: 50px;
+    transform: rotate(-30deg);
+}
+#da{
+    position: absolute;
+    left: 240px;
+    bottom: 110px;
+    transform: rotate(-10deg);
+}
+#tan{
+    position: absolute;
+    left: 440px;
+    bottom: 85px;
+    transform: rotate(-5deg);
+}
+#xian{
+    position: absolute;
+    left: 620px;
+    bottom: 60px;
+    transform: rotate(20deg);
+}
+/* 开始按钮 */
+#startBut {
+    width: 234px;
+    height: 95px;
+    position: absolute;
+        left: 423px;
+        top: 512px;
+    opacity: 0.7;
+    /* 边框设置 */
+    border-radius: 15px;
+    /*border: none;*/
+    /*box-shadow: 0px 0px 5px 5px #E3BEA0,0px 0px 15px 10px #D6B399;*/
+    /* 字体 */
+    font-size: 42px;
+    font-family: Tahoma,Helvetica,Arial,'宋体',sans-serif;
+
+    border: 1px solid hsl(54, 100%, 20%);
+    z-index: 4;
+    outline: none;
+
+    box-shadow: inset 0 1px 0 hsl(54, 100%, 50%),
+    0 2px 0 hsl(54, 100%, 20%),
+    0 3px 0 hsl(54, 100%, 18%),
+    0 4px 0 hsl(54, 100%, 16%),
+    0 5px 0 hsl(54, 100%, 14%),
+    0 6px 0 hsl(54, 100%, 12%),
+    0 7px 0 hsl(54, 100%, 10%),
+    0 8px 0 hsl(54, 100%, 8%),
+    0 9px 0 hsl(54, 100%, 6%);
+}
+
+#startBut:active{
+    top: 517px;
+    box-shadow: inset 0 1px 0 hsl(54, 100%, 50%),
+    0 2px 0 hsl(54, 100%, 16%),
+    0 3px 0 hsl(54, 100%, 14%),
+    0 4px 0 hsl(54, 100%, 12%),
+    0 5px 0 hsl(54, 100%, 10%),
+    0 6px 0 hsl(54, 100%, 8%),
+    0 7px 0 hsl(54, 100%, 6%);
+}

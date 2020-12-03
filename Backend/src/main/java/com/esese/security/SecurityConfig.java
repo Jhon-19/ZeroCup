@@ -26,14 +26,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .antMatchers("/register.html","/login.html","/register","/login","/loginfail.html","/index.html").permitAll()
+                .antMatchers("/","/images/**","/jquery/*","/styles/*","/audios/*",
+                        "/htmls/register.html","/htmls/login.html","/register","/htmls/login","/login",
+                        "/htmls/loginfail.html","/index.html").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
                 .loginProcessingUrl("/login").permitAll()
-                .loginPage("/login.html").permitAll()
+                .loginPage("/htmls/login.html").permitAll()
                 .defaultSuccessUrl("/index.html")
-                .failureForwardUrl("/loginfail.html").permitAll()
+                .failureForwardUrl("/htmls/loginfail.html").permitAll()
                 .permitAll()
                 .and()
                 .logout()
