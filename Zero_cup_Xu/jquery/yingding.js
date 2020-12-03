@@ -162,6 +162,19 @@ $(document).ready(
                         opacity: 1
                     }, 1500)
                 },5000)
+                $.ajax({
+                    method:"post",
+                    url:"setdata",
+                    data:{
+                        "type":"yingDing"
+                    },
+                    success:function(data){
+                        if(data==="成功")
+                            console.log("成功上传数据。");
+                        else
+                            console.log("上传数据失败："+data);
+                    }
+                })
             }
         })
 
