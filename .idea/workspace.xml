@@ -24,7 +24,15 @@
   <component name="ChangeListManager">
     <list default="true" id="921b8bc1-3416-456a-8b63-b616acfddb7e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmls/firstPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmls/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmls/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmls/laotu.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmls/laotu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmls/laotu2.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmls/laotu2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmls/laozhaishe.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmls/laozhaishe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmls/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmls/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmls/wanlin.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmls/wanlin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmls/yingding.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmls/yingding.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/jquery/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +68,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.laozhaishe.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="firstPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ZeroCup/htmls/firstPage.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ZeroCup/htmls/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="laozhaishe.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ZeroCup/htmls/laozhaishe.html" useBuiltInWebServerPort="true">
@@ -73,16 +84,13 @@
     <configuration name="wanlin.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ZeroCup/htmls/wanlin.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="wanlin.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/jquery/wanlin.js" working-dir="$PROJECT_DIR$/jquery">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.laozhaishe.html" />
         <item itemvalue="JavaScript Debug.wanlin.html" />
         <item itemvalue="JavaScript Debug.firstPage.html" />
         <item itemvalue="JavaScript Debug.main.html" />
-        <item itemvalue="Node.js.wanlin.js" />
       </list>
     </recent_temporary>
   </component>
@@ -145,22 +153,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="81" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606052316662" />
-    <state width="1259" height="164" key="GridCell.Tab.0.bottom" timestamp="1606979546703">
+    <state width="1259" height="164" key="GridCell.Tab.0.bottom" timestamp="1606983364064">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="164" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1606979546703" />
-    <state width="1259" height="164" key="GridCell.Tab.0.center" timestamp="1606979546703">
+    <state width="1259" height="164" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1606983364064" />
+    <state width="1259" height="164" key="GridCell.Tab.0.center" timestamp="1606983364064">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="164" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1606979546703" />
-    <state width="1259" height="164" key="GridCell.Tab.0.left" timestamp="1606979546703">
+    <state width="1259" height="164" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1606983364064" />
+    <state width="1259" height="164" key="GridCell.Tab.0.left" timestamp="1606983364064">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="164" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1606979546703" />
-    <state width="1259" height="164" key="GridCell.Tab.0.right" timestamp="1606979546703">
+    <state width="1259" height="164" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1606983364064" />
+    <state width="1259" height="164" key="GridCell.Tab.0.right" timestamp="1606983364064">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="164" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1606979546703" />
+    <state width="1259" height="164" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1606983364064" />
     <state width="1259" height="195" key="GridCell.Tab.1.bottom" timestamp="1606035951940">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
