@@ -1,0 +1,9 @@
+/* 存放公共样式 */
+.background {
+    width: 1080px;
+    height: 720px;
+    background-repeat: no-repeat;
+    background-size: 1080px 720px;
+    margin: 0 auto;
+    perspective: 500px;
+}

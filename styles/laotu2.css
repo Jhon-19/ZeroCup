@@ -1,0 +1,66 @@
+#laoTuBackground2 {
+    background-image: url("../images/laotu/back2.jpg");
+}
+#bookshelf {
+    background-image: url("../images/laotu/bookshelf.png");
+    width: 400px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 100px;
+    top: 90px;
+    /* 起初不可见 */
+    visibility: hidden;
+}
+#book {
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    left: 37px;
+    top: 20px;
+    outline: none;
+    /* 设置动画属性 */
+    transition: all 1s;
+    transition-delay: 200ms;
+}
+/* 搜寻书按钮 */
+#findBut {
+    width: 100px;
+    height: 60px;
+    bottom: 300px;
+    position: absolute;
+    margin-left: 780px;
+    outline: none;
+    /*箭头不断左右移动*/
+    animation: myName 1s infinite 0.5s alternate;
+    animation-timing-function: linear;
+}
+/* 关键帧 */
+@keyframes myName {
+    50%{
+        margin-left: 750px;
+    }
+    100%{
+        margin-left: 780px;
+    }
+
+}
+/* 返回地图按钮 */
+#returnMap{
+    border-radius: 10px;
+    border: 0;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    font-family: 华文楷体, sans-serif;
+    bottom: 80px;
+    right: 50px;
+    outline: none;
+    box-shadow: 0px 0px 5px 5px #3E3734,0px 0px 15px 10px #6D6473;
+    visibility: hidden;
+}
+#returnMap:active {
+    bottom: 76px;
+}
