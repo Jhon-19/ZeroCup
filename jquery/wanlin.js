@@ -132,6 +132,19 @@ function judgeClicked(isFoxClicked) {
         fox1.css('display', 'none')
         fox2.css('display', 'none')
         fox3.css('display', 'none')
+        $.ajax({
+            method:"post",
+            url:"setdata",
+            data:{
+                "type":"wanLin"
+            },
+            success:function(data){
+                if(data==="成功")
+                    console.log("成功上传数据。");
+                else
+                    console.log("上传数据失败："+data);
+            }
+        })
     }
 }
 
