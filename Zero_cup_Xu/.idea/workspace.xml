@@ -20,19 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e82b5ce-6264-4616-a22b-9a2baf198eb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/firstPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/firstPage/back.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/firstPage/back2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/yingding/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/firstPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/global.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/laotu/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/laotu/book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/laotu/bookshelf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/laotu/fox1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/yingding/fox5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/laotu.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/laotu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/laotu2.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/laotu2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/yingding.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/yingding.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/yingding/back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/laotu2.js" beforeDir="false" afterPath="$PROJECT_DIR$/jquery/laotu2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/laotu/arrow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/laotu/book.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/laotu/bookshelf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/laotu/fox1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/yingding/fox1.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/jquery/yingding.js" beforeDir="false" afterPath="$PROJECT_DIR$/jquery/yingding.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/firstPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/firstPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/laotu.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/laotu.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/laotu2.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/laotu2.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/yingding.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/yingding.css" afterDir="false" />
@@ -94,19 +97,6 @@
       <recent name="C:\Users\user\Desktop\Zero_cup_Xu\images\laotu" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -120,7 +110,8 @@
       <workItem from="1606839038655" duration="111000" />
       <workItem from="1606839168709" duration="342000" />
       <workItem from="1606865637211" duration="2515000" />
-      <workItem from="1606869180566" duration="5265000" />
+      <workItem from="1606869180566" duration="6954000" />
+      <workItem from="1606950681867" duration="2641000" />
     </task>
     <servers />
   </component>

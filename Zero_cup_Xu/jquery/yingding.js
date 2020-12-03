@@ -121,15 +121,20 @@ $(document).ready(
         //验证答案
         answer=$('#answer')
         answer.blur(function (){
-            var num = answer.val()
-            if (num > 6){
+            // 去掉所填内容中的非数字部分
+            var num = answer.val().replace(/[^0-9]/ig,'')
+            answer.val(num)
+            if (num==''){
+                loadText(bubble, "好像不对呢~")
+            }
+            else if (num > 6){
                 loadText(bubble, "太大了哦！")
             }else if (num < 6){
                 loadText(bubble, "太小了哦！")
                 setTimeout(function (){
                     f4.css('transform', 'translate(0px,-100px)')
                 }, 200)
-            }else {
+            }else if (num==6){
                 loadText(bubble, "你答对啦！")
                 setTimeout(function (){
                     // 狐狸和气泡慢慢消失
@@ -142,7 +147,7 @@ $(document).ready(
                 }, 1200)
                 // 花瓣来个花里胡哨
                 setTimeout(function (){
-                    f1.css('transform', 'translate(450px, -200px) rotate(180deg) scale(15) skew(-30deg)')
+                    f1.css('transform', 'translate(450px, -200px) rotate(180deg) scale(18) skew(-30deg)')
                 }, 2900)
                 setTimeout(function (){
                     gameBox.animate({

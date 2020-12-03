@@ -47,7 +47,7 @@
 
 #fox{
     height: 120px;
-    width: 120px;
+    width: 100px;
     position: absolute;
     left: 300px;
     bottom: 2px;
@@ -96,4 +96,7 @@
     font-family: 华文楷体, sans-serif;
     box-shadow: 0px 0px 5px 5px #50534A,0px 0px 15px 10px #8F8C8D;
     visibility: hidden;
+}
+#returnMap:active{
+    bottom: 76px;
 }

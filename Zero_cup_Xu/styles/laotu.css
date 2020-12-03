@@ -37,11 +37,16 @@
     border: 0;
     width: 150px;
     height: 40px;
+    /* 字体设置 */
     font-size: 25px;
     font-weight: bold;
     font-family: 宋体, sans-serif;
     /*起初不可见*/
-    visibility: hidden
+    visibility: hidden;
+    outline: none;
+}
+#enterBut:active{
+    margin-top: 7px;
 }
 
 /*fox图标*/
