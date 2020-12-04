@@ -70,8 +70,22 @@
     left: 480px;
     display: none;
 }
-
+.fox:hover{
+    transform: scale(1.2);
+}
 /*为所有按钮设置样式*/
+.but{
+    outline: none;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    font-family: 华文楷体, sans-serif;
+    display: none;
+}
+.but:hover{
+    transform: scale(1.1);
+}
 #introduction input {
     border-radius: 10px;
     border: 0;
@@ -79,38 +93,20 @@
 
 /*全景按钮*/
 #panorama {
-    position: absolute;
-    width: 200px;
-    height: 50px;
-    font-size: 30px;
-    font-family: 华文楷体, sans-serif;
     top: 230px;
     left: 440px;
-    display: none;
 }
 
 /*掠影按钮*/
 #glimpse {
-    position: absolute;
-    width: 200px;
-    height: 50px;
-    font-size: 30px;
-    font-family: 华文楷体, sans-serif;
     top: 330px;
     left: 440px;
-    display: none;
 }
 
 /*返回地图按钮*/
 #returnMap {
-    position: absolute;
-    width: 200px;
-    height: 50px;
-    font-size: 30px;
-    font-family: 华文楷体, sans-serif;
     top: 430px;
     left: 440px;
-    display: none;
 }
 
 /*全景div*/
@@ -153,5 +149,6 @@
     height: 50px;
     font-size: 30px;
     font-family: 华文楷体, sans-serif;
-    margin: 50px 440px 0 440px;
+    margin: 50px 440px 0px 440px;
+    outline: none;
 }

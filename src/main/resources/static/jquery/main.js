@@ -19,6 +19,11 @@ var map
 
 var isAllFinished = true//判断是否闯关成功
 
+// 五朵花
+var flo1, flo2, flo3, flo4, flo5
+var flos = [flo1, flo2, flo3, flo4, flo5]
+// 成功图片
+var success
 
 //闪烁动画
 function twinkle() {
@@ -99,6 +104,15 @@ $(document).ready(function () {
     laoZhaiSheB = $('#plot3')
 
     map = $('#backgroundImage')
+
+    for(var i = 1; i < 6; i++){
+        flos[i-1] = $('#flo' + i)
+        // 一开始花瓣不飘
+        flos[i-1].css('animation-play-state', 'paused')
+        document.styleSheets[0].addRule('#flo'+i+'::after',
+        'animation-play-state:' + 'paused !important');
+    }
+    success = $('#success')
 
     //接收后台数据
     getAll()
@@ -306,6 +320,16 @@ $(document).ready(function () {
     //闯关完成
     if (isAllFinished) {
         //插入结束动画
+        for(var i = 1; i < 6; i++){
+            flos[i-1] = $('#flo' + i)
+            // 一开始花瓣不飘
+            flos[i-1].css('animation-play-state', 'running')
+            document.styleSheets[0].addRule('#flo'+i+'::after',
+                'animation-play-state:' + 'running !important');
+        }
+        success.animate({
+            opacity: 1
+        }, 1500)
     } else {
         var id = setInterval(twinkle, 2000)
 

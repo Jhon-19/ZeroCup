@@ -1,0 +1,108 @@
+
+/**************** 樱花飘飞 *****************/
+.flo {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: -70px;
+}
+.flo:after {
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    content: '';
+    display: block;
+    width: 70px;
+    height: 70px;
+}
+/* 第一朵 */
+#flo1{
+    left: 100px;
+    animation: a11 7s ease-in infinite;
+}
+#flo1:after{
+    background-image: url("https://s3.ax1x.com/2020/12/03/DHpE3n.png");
+    animation: a12 7s ease-out infinite;
+}
+@keyframes a11 {
+    50%{ transform: translateX(0px); }
+    100%{ transform: translateX(360px) }
+}
+@keyframes a12 {
+    50%{ transform: translateY(0px); opacity: 1; }
+    70%{ opacity: 1; }
+    100%{ transform: translateY(790px) rotate(720deg); opacity: 0; }
+}
+/* 第二朵 */
+#flo2{
+    left: 300px;
+    animation: a21 8s ease-in infinite;
+}
+#flo2:after{
+    background-image: url("https://s3.ax1x.com/2020/12/03/DHpVcq.png");
+    animation: a22 8s ease-out infinite;
+}
+@keyframes a21 {
+    40%{ transform: translateX(0px); }
+    100%{ transform: translateX(-260px) }
+}
+@keyframes a22 {
+    40%{ transform: translateY(0px); opacity: 1; }
+    70%{ opacity: 1; }
+    100%{ transform: translateY(790px) scale(0.5) rotate(320deg); opacity: 0; }
+}
+/* 第三朵 */
+#flo3{
+    left: 700px;
+    animation: a31 5s ease-in infinite;
+}
+#flo3:after{
+    background-image: url("https://s3.ax1x.com/2020/12/03/DHpZj0.png");
+    animation: a32 5s ease-out infinite;
+}
+@keyframes a31 {
+    50%{ transform: translateX(0px); }
+    100%{ transform: translateX(380px) }
+}
+@keyframes a32 {
+    50%{ transform: translateY(0px); opacity: 1; }
+    70%{ opacity: 1; }
+    100%{ transform: translateY(590px) rotate(180deg); opacity: 0; }
+}
+/* 第四朵 */
+#flo4{
+    left: 600px;
+    animation: a41 5s ease-in infinite;
+}
+#flo4:after{
+    background-image: url("https://s3.ax1x.com/2020/12/03/DHpE3n.png");
+    animation: a42 5s ease-out infinite;
+}
+@keyframes a41 {
+    20%{ transform: translateX(0px); }
+    100%{ transform: translateX(-360px) }
+}
+@keyframes a42 {
+    20%{ transform: translateY(0px); opacity: 1; }
+    70%{ opacity: 1; }
+    100%{ transform: translateY(790px) rotate(360deg); opacity: 0; }
+}
+/* 第四朵 */
+#flo5{
+    top: 500px;
+    left: 0px;
+    animation: a51 15s ease-in infinite;
+}
+#flo5:after{
+    background-image: url("https://s3.ax1x.com/2020/12/03/DHpE3n.png");
+    animation: a52 15s ease-out infinite;
+}
+@keyframes a51 {
+    40%{ transform: translateX(0px);}
+    100%{ transform: translateX(890px) }
+}
+@keyframes a52 {
+    40%{ transform: translateY(0px); opacity: 0.2; }
+    70%{ opacity: 1; }
+    100%{ transform: translateY(90px) scale(0.8) rotate(720deg); opacity: 0; }
+}

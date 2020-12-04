@@ -88,3 +88,13 @@
     top: 220px;
     left: 380px;
 }
+
+#success{
+    width: 420px;
+    height: 125px;
+    box-shadow: 2px 2px 5px 5px #3E3734,2px 2px 15px 10px #6D6473;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0;
+}
