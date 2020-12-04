@@ -24,8 +24,17 @@ var flos = [flo1, flo2, flo3, flo4, flo5]
 // 成功图片
 var success
 
-//
+//闪烁事件id
 var id
+
+//是否越界标记
+var outOpacity1
+var outOpacity2
+var outOpacity3
+var outOpacity4
+var outOpacity5
+var outOpacity6
+
 
 //闪烁动画
 function twinkle() {
@@ -33,8 +42,26 @@ function twinkle() {
         opacity: 0
     }, 500)
     setTimeout(function () {
-        $(".twinkles").animate({
-            opacity: 1
+        // $(".twinkles").animate({
+        //     opacity: outOpacity1
+        // }, 500)
+        paiFang.animate({
+            opacity: outOpacity1
+        }, 500)
+        aoChang.animate({
+            opacity: outOpacity2
+        }, 500)
+        yingDing.animate({
+            opacity: outOpacity3
+        }, 500)
+        laoTu.animate({
+            opacity: outOpacity4
+        }, 500)
+        wanLin.animate({
+            opacity: outOpacity5
+        }, 500)
+        laoZhaiShe.animate({
+            opacity: outOpacity6
         }, 500)
     })
     //闯关完成
@@ -124,6 +151,13 @@ $(document).ready(function () {
     wanLinB = $('#plot5')
     laoZhaiSheB = $('#plot3')
 
+    outOpacity1 = 1
+    outOpacity2 = 1
+    outOpacity3 = 1
+    outOpacity4 = 1
+    outOpacity5 = 1
+    outOpacity6 = 1
+
     map = $('#backgroundImage')
 
     for(var i = 1; i < 6; i++){
@@ -170,13 +204,20 @@ $(document).ready(function () {
     var top6B = parseInt(laoZhaiSheB.css("top").replace(/[^0-9]/ig, ""));
     var left6B = parseInt(laoZhaiSheB.css("left").replace(/[^0-9]/ig, ""));
 
+    var isClicked = false//防止连续点击
     //地图添加点击事件
     map.click(function (e) {
-        clearInterval(id)
-        setTimeout(moveAll, 1000)
-        setTimeout(function (){
-            id = setInterval(twinkle, 1000)
-        }, 2000)
+        if (!isClicked){
+            isClicked = true
+            setTimeout(function (){
+                isClicked = false
+            }, 3000)
+            clearInterval(id)
+            setTimeout(moveAll, 1000)
+            setTimeout(function (){
+                id = setInterval(twinkle, 1000)
+            }, 2000)
+        }
 
         function moveAll(){
             var x = e.offsetX
@@ -199,202 +240,206 @@ $(document).ready(function () {
                     backgroundPositionY: moveY
                 }, 1000)
 
-                var outOpacity = 1
+                outOpacity1 = 1
                 var isOutBound = (left1*3+moveX > 1080 || left1*3+moveX < 0)||(top1*3+moveY > 750 || top1*3+moveY < 0)
                 if(isOutBound){
-                    outOpacity = 0
+                    outOpacity1 = 0
                 }
                 paiFang.animate({
                     width: 90,
                     left: left1*3+moveX,
                     top: top1*3+moveY,
-                    opacity: outOpacity
+                    opacity: outOpacity1
                 }, 1000)
                 paiFangB.animate({
                     width: 90,
                     left: left1B*3+moveX,
                     top: top1B*3+moveY,
-                    opacity: outOpacity
+                    opacity: outOpacity1
                 }, 1000)
 
-                outOpacity = 1
+                outOpacity2 = 1
                 isOutBound = (left2*3+moveX > 1080 || left2*3+moveX < 0)||(top2*3+moveY > 750 || top2*3+moveY < 0);
                 if(isOutBound){
-                    outOpacity = 0
+                    outOpacity2 = 0
                 }
                 aoChang.animate({
                     width: 90,
                     left: left2*3+moveX,
                     top: top2*3+moveY,
-                    opacity: outOpacity
+                    opacity: outOpacity2
                 }, 1000)
                 aoChangB.animate({
                     width: 90,
                     left: left2B*3+moveX,
                     top: top2B*3+moveY,
-                    opacity: outOpacity
+                    opacity: outOpacity2
                 }, 1000)
 
-                outOpacity = 1
+                outOpacity3 = 1
                 isOutBound = (left3*3+moveX > 1080 || left3*3+moveX < 0)||(top3*3+moveY > 750 || top3*3+moveY < 0);
                 if(isOutBound){
-                    outOpacity = 0
+                    outOpacity3 = 0
                 }
                 yingDing.animate({
                     width: 90,
                     left: left3*3+moveX,
                     top: top3*3+moveY,
-                    opacity: outOpacity
+                    opacity: outOpacity3
                 }, 1000)
                 yingDingB.animate({
                     width: 90,
                     left: left3B*3+moveX,
                     top: top3B*3+moveY,
-                    opacity: outOpacity
+                    opacity: outOpacity3
                 }, 1000)
 
-                outOpacity = 1
+                outOpacity4 = 1
                 isOutBound = (left4*3+moveX > 1080 || left4*3+moveX < 0)||(top4*3+moveY > 750 || top4*3+moveY < 0);
                 if(isOutBound){
-                    outOpacity = 0
+                    outOpacity4 = 0
                 }
                 laoTu.animate({
                     width: 90,
                     left: left4*3+moveX,
                     top: top4*3+moveY,
-                    opacity: outOpacity
+                    opacity: outOpacity4
                 }, 1000)
                 laoTuB.animate({
                     width: 90,
                     left: left4B*3+moveX,
                     top: top4B*3+moveY,
-                    opacity: outOpacity
+                    opacity: outOpacity4
                 }, 1000)
 
-                outOpacity = 1
+                outOpacity5 = 1
                 isOutBound = (left5*3+moveX > 1080 || left5*3+moveX < 0)||(top5*3+moveY > 750 || top5*3+moveY < 0);
                 if(isOutBound){
-                    outOpacity = 0
+                    outOpacity5 = 0
                 }
                 wanLin.animate({
                     width: 90,
                     left: left5*3+moveX,
                     top: top5*3+moveY,
-                    opacity: outOpacity
+                    opacity: outOpacity5
                 }, 1000)
                 wanLinB.animate({
                     width: 90,
                     left: left5B*3+moveX,
                     top: top5B*3+moveY,
-                    opacity: outOpacity
+                    opacity: outOpacity5
                 }, 1000)
 
-                outOpacity = 1
+                outOpacity6 = 1
                 isOutBound = (left6*3+moveX > 1080 || left6*3+moveX < 0)||(top6*3+moveY > 750 || top6*3+moveY < 0);
                 if(isOutBound){
-                    outOpacity = 0
+                    outOpacity6 = 0
                 }
                 laoZhaiShe.animate({
                     width: 90,
                     left: left6*3+moveX,
                     top: top6*3+moveY,
-                    opacity: outOpacity
+                    opacity: outOpacity6
                 }, 1000)
                 laoZhaiSheB.animate({
                     width: 90,
                     left: left6B*3+moveX,
                     top: top6B*3+moveY,
-                    opacity: outOpacity
+                    opacity: outOpacity6
                 }, 1000)
             } else {
                 var width = width0
                 var height = height0
                 isEnlarged = false
-                var outOpacity = 1
+                outOpacity1 = 1
+                outOpacity2 = 1
+                outOpacity3 = 1
+                outOpacity4 = 1
+                outOpacity5 = 1
+                outOpacity6 = 1
 
                 map.animate({
                     backgroundSize: width,
                     backgroundPositionX: 0,
                     backgroundPositionY: 0,
-                    opacity: outOpacity
                 }, 1000)
 
                 paiFang.animate({
                     width: 30,
                     left: left1,
                     top: top1,
-                    opacity: outOpacity
+                    opacity: outOpacity1
                 }, 1000)
                 paiFangB.animate({
                     width: 30,
                     left: left1B,
                     top: top1B,
-                    opacity: outOpacity
+                    opacity: outOpacity1
                 }, 1000)
 
                 aoChang.animate({
                     width: 30,
                     left: left2,
                     top: top2,
-                    opacity: outOpacity
+                    opacity: outOpacity2
                 }, 1000)
                 aoChangB.animate({
                     width: 30,
                     left: left2B,
                     top: top2B,
-                    opacity: outOpacity
+                    opacity: outOpacity2
                 }, 1000)
 
                 yingDing.animate({
                     width: 30,
                     left: left3,
                     top: top3,
-                    opacity: outOpacity
+                    opacity: outOpacity3
                 }, 1000)
                 yingDingB.animate({
                     width: 30,
                     left: left3B,
                     top: top3B,
-                    opacity: outOpacity
+                    opacity: outOpacity3
                 }, 1000)
 
                 laoTu.animate({
                     width: 30,
                     left: left4,
                     top: top4,
-                    opacity: outOpacity
+                    opacity: outOpacity4
                 }, 1000)
                 laoTuB.animate({
                     width: 30,
                     left: left4B,
                     top: top4B,
-                    opacity: outOpacity
+                    opacity: outOpacity4
                 }, 1000)
 
                 wanLin.animate({
                     width: 30,
                     left: left5,
                     top: top5,
-                    opacity: outOpacity
+                    opacity: outOpacity5
                 }, 1000)
                 wanLinB.animate({
                     width: 30,
                     left: left5B,
                     top: top5B,
-                    opacity: outOpacity
+                    opacity: outOpacity5
                 }, 1000)
 
                 laoZhaiShe.animate({
                     width: 30,
                     left: left6,
                     top: top6,
-                    opacity: outOpacity
+                    opacity: outOpacity6
                 }, 1000)
                 laoZhaiSheB.animate({
                     width: 30,
                     left: left6B,
                     top: top6B,
-                    opacity: outOpacity
+                    opacity: outOpacity6
                 }, 1000)
 
             }
