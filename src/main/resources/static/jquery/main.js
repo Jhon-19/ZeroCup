@@ -17,8 +17,7 @@ var laoZhaiSheB
 //地图
 var map
 
-var isAllFinished = true//判断是否闯关成功
-
+var isAllFinished
 // 五朵花
 var flo1, flo2, flo3, flo4, flo5
 var flos = [flo1, flo2, flo3, flo4, flo5]
@@ -88,6 +87,9 @@ function getAll() {
 }
 
 $(document).ready(function () {
+
+    isAllFinished = true//判断是否闯关成功
+
     //初始化各变量
     paiFang = $('#twinkle4')
     aoChang = $('#twinkle1')
