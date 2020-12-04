@@ -317,52 +317,55 @@ $(document).ready(function () {
 
     })
 
-    //闯关完成
-    if (isAllFinished) {
-        //插入结束动画
-        for(var i = 1; i < 6; i++){
-            flos[i-1] = $('#flo' + i)
-            // 一开始花瓣不飘
-            flos[i-1].css('animation-play-state', 'running')
-            document.styleSheets[0].addRule('#flo'+i+'::after',
-                'animation-play-state:' + 'running !important');
+    setTimeout(function (){
+        //闯关完成
+        if (isAllFinished) {
+            //插入结束动画
+            for(var i = 1; i < 6; i++){
+                flos[i-1] = $('#flo' + i)
+                // 一开始花瓣不飘
+                flos[i-1].css('animation-play-state', 'running')
+                document.styleSheets[0].addRule('#flo'+i+'::after',
+                    'animation-play-state:' + 'running !important');
+            }
+            success.animate({
+                opacity: 1
+            }, 1500)
+        } else {
+            var id = setInterval(twinkle, 2000)
+
+            //为各地点添加点击事件
+            paiFang.click(function () {
+                clearInterval(id)
+                $(location).attr('href', 'paifang.html')
+            })
+
+            aoChang.click(function () {
+                clearInterval(id)
+                $(location).attr('href', 'aoChang.html')
+            })
+
+            yingDing.click(function () {
+                clearInterval(id)
+                $(location).attr('href', 'yingding.html')
+            })
+
+            laoTu.click(function () {
+                clearInterval(id)
+                $(location).attr('href', 'laotu.html')
+            })
+
+            wanLin.click(function () {
+                clearInterval(id)
+                $(location).attr('href', 'wanlin.html')
+            })
+
+            laoZhaiShe.click(function () {
+                clearInterval(id)
+                $(location).attr('href', 'laozhaishe.html')
+            })
         }
-        success.animate({
-            opacity: 1
-        }, 1500)
-    } else {
-        var id = setInterval(twinkle, 2000)
+    }, 2000)
 
-        //为各地点添加点击事件
-        paiFang.click(function () {
-            clearInterval(id)
-            $(location).attr('href', 'paifang.html')
-        })
-
-        aoChang.click(function () {
-            clearInterval(id)
-            $(location).attr('href', 'aoChang.html')
-        })
-
-        yingDing.click(function () {
-            clearInterval(id)
-            $(location).attr('href', 'yingding.html')
-        })
-
-        laoTu.click(function () {
-            clearInterval(id)
-            $(location).attr('href', 'laotu.html')
-        })
-
-        wanLin.click(function () {
-            clearInterval(id)
-            $(location).attr('href', 'wanlin.html')
-        })
-
-        laoZhaiShe.click(function () {
-            clearInterval(id)
-            $(location).attr('href', 'laozhaishe.html')
-        })
-    }
 
 })

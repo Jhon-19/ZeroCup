@@ -23,16 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="921b8bc1-3416-456a-8b63-b616acfddb7e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/styles/flower.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/htmls/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/htmls/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/htmls/wanlin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/htmls/wanlin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/jquery/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/jquery/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles/firstPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles/firstPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles/laozhaishe.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles/laozhaishe.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles/wanlin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles/wanlin.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +126,7 @@
       <workItem from="1606941454320" duration="5845000" />
       <workItem from="1607054668649" duration="7522000" />
       <workItem from="1607062817872" duration="79000" />
-      <workItem from="1607062950597" duration="4022000" />
+      <workItem from="1607062950597" duration="7075000" />
     </task>
     <servers />
   </component>
@@ -246,6 +238,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="185" y="69" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.680@0.0.1280.680" timestamp="1606035969189" />
+    <state x="185" y="179" key="new project wizard" timestamp="1607078420547">
+      <screen x="0" y="0" width="1440" height="960" />
+    </state>
+    <state x="185" y="179" key="new project wizard/0.0.1440.960@0.0.1440.960" timestamp="1607078420547" />
     <state x="377" y="221" key="run.anything.popup" timestamp="1607069255758">
       <screen x="0" y="0" width="1440" height="960" />
     </state>
