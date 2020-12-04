@@ -93,38 +93,38 @@ function getAll() {
                     case("paiFang"):
                         if (item) {
                             paiFang.css('display', 'none')
+                            finishCount++
                         }
-                        finishCount++
                         break
                     case("aoChang"):
                         if (item) {
                             aoChang.css('display', 'none')
+                            finishCount++
                         }
-                        finishCount++
                         break
                     case("yingDing"):
                         if (item) {
                             yingDing.css('display', 'none')
+                            finishCount++
                         }
-                        finishCount++
                         break
                     case("laoTu"):
                         if (item) {
                             laoTu.css('display', 'none')
+                            finishCount++
                         }
-                        finishCount++
                         break
                     case("wanLin"):
                         if (item) {
                             wanLin.css('display', 'none')
+                            finishCount++
                         }
-                        finishCount++
                         break
                     case("laoZhaiShe"):
                         if (item) {
                             laoZhaiShe.css('display', 'none')
+                            finishCount++
                         }
-                        finishCount++
                         break
                 }
             })
@@ -222,6 +222,10 @@ $(document).ready(function () {
         function moveAll(){
             var x = e.offsetX
             var y = e.offsetY
+
+            if(x < 50 || y < 50){
+                return
+            }
 
             if (!isEnlarged) {
                 var width = 3 * width0
