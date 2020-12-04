@@ -365,7 +365,7 @@ $(document).ready(function () {
                 $(location).attr('href', 'laozhaishe.html')
             })
         }
-    }, 2000)
+    }, 1000)
 
 
 })
