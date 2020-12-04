@@ -25,7 +25,7 @@ var introduction3 = '别看老斋舍历史悠久，现代化生活设施可不�
 var introductions = [introduction0, introduction1, introduction2, introduction3]
 
 //fox图片路径
-var path = '../images/LaozhaishePics/'
+var path = ['https://s3.ax1x.com/2020/12/03/DHpHK0.png','https://s3.ax1x.com/2020/12/03/DHpTvq.png','https://s3.ax1x.com/2020/12/03/DHpo2n.png']
 
 //背景音乐对象
 var bgm
@@ -44,7 +44,7 @@ function changeFox(index) {
     }, 1000)
     //上一个fox消失后，1s内逐渐显示下一个fox
     setTimeout(function (){
-        fox.attr('src', path + 'fox' + index + '.png')
+        fox.attr('src', path[index])
         fox.animate({
             opacity: 1
         }, 1000)

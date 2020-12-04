@@ -72,7 +72,7 @@ public class User {
     }
 
     public boolean isComplete(dataType type){
-        return (data&(0x1<<type.ordinal()))==1;
+        return (data&(0x1<<type.ordinal()))!=0;
     }
 
     public void setComplete(dataType type){

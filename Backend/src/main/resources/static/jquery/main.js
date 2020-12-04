@@ -27,7 +27,7 @@ function getAll() {
         method: "post",
         url: "../getdata",
         success: function (data) {
-            $.each(data.result, function (index, item) {
+            $.each(JSON.parse(data), function (index, item) {
                 switch (index) {
                     case("paiFang"):
                         if (item) {
@@ -41,7 +41,7 @@ function getAll() {
                         break
                     case("yingDing"):
                         if (item) {
-                            aoChang.css('display', 'none')
+                            yingDing.css('display', 'none')
                         }
                         break
                     case("laoTu"):
@@ -51,7 +51,7 @@ function getAll() {
                         break
                     case("wanLin"):
                         if (item) {
-                            wanlin.css('display', 'none')
+                            wanLin.css('display', 'none')
                         }
                         break
                     case("laoZhaiShe"):
