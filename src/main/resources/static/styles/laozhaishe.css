@@ -1,0 +1,60 @@
+*{
+    /*全部边界为0*/
+    margin: 0;
+}
+
+/*背景图*/
+#backgroundImage{
+    width: 1080px;
+    height: 720px;
+    background-image: url("https://s3.ax1x.com/2020/12/03/DHpbrV.jpg");
+    background-repeat: no-repeat;
+    background-size: 1080px 720px;
+    margin: 0 auto;
+}
+
+/*主面板*/
+#introduction{
+    position: relative;
+    width: 1080px;
+    height: 720px;
+}
+
+/*文本框*/
+#introductionText{
+    width: 500px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 150px 290px 0 290px;
+    outline: none;
+    font-size: 30px;
+    font-family: 华文楷体, sans-serif;
+    border: rgba(255, 255, 255, 0);
+    resize: none;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 0 10px 0 30px;
+}
+
+/*fox图标*/
+#fox{
+    /*width: 120px;*/
+    /*height: 150px;*/
+    width: 0;
+    height: 0;
+    margin: 10px 0 0 100px;
+    position: relative;
+}
+
+/*返回按钮*/
+#returnMap{
+    border-radius: 10px;
+    border: 0;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    font-family: 华文楷体, sans-serif;
+    top: 650px;
+    left: 750px;
+}

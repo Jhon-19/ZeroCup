@@ -1,0 +1,90 @@
+*{
+    /*全部边界为0*/
+    margin: 0;
+}
+
+#backgroundImage{
+    width: 1080px;
+    height: 720px;
+    position: relative;
+    background-image: url("https://s3.ax1x.com/2020/12/03/DHi8IO.png");
+    background-repeat: no-repeat;
+    background-size: 1080px 720px;
+    margin: 0 auto;
+}
+
+.plots{
+    width: 30px;
+    position: absolute;
+}
+
+.twinkles{
+    width: 30px;
+    position: absolute;
+}
+
+/*奥场*/
+#plot1{
+    top: 250px;
+    left: 600px;
+}
+
+#twinkle1{
+    top: 270px;
+    left: 600px;
+}
+
+/*老图书馆*/
+#plot2{
+    top: 130px;
+    left: 400px;
+}
+
+#twinkle2{
+    top: 150px;
+    left: 400px;
+}
+
+/*老斋舍*/
+#plot3{
+    top: 200px;
+    left: 430px;
+}
+
+#twinkle3{
+    top: 220px;
+    left: 430px;
+}
+
+/*牌坊*/
+#plot4{
+    top: 550px;
+    left: 190px;
+}
+
+#twinkle4{
+    top: 570px;
+    left: 190px;
+}
+
+/*万林*/
+#plot5{
+    top: 350px;
+    left: 380px;
+}
+
+#twinkle5{
+    top: 370px;
+    left: 380px;
+}
+
+/*樱顶*/
+#plot6{
+    top: 180px;
+    left: 380px;
+}
+
+#twinkle6{
+    top: 200px;
+    left: 380px;
+}

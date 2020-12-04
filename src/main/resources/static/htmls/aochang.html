@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cn" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>武大探险-牌坊</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="Shortcut Icon" href="https://s1.ax1x.com/2020/03/27/GPH9xO.png" type="image/png"/>
+    <link rel="stylesheet" href="../styles/paifangaochang.css" />
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="margin:0px">
+<div style="margin-top:10px;margin-left:10px;">
+    <a class="btn btn-primary" style="font-family: 华文楷体, sans-serif;" href="main.html">返回地图</a>
+</div>
+<div class="spinner-border text-primary" role="status" style="float:left;" id="loading">
+
+</div>
+<div style="float:left;padding:10px;font-size: 30px;font-family: 华文楷体, sans-serif;">
+    <p id="text">Loading...</p>
+</div>
+<span class="hidden" id="intro">
+        奥场全名为“奥林匹克操场”，又名“912操场”，因毛泽东1958年9月12日视察武汉大学得名。
+        奥场两面分别是武大的行政楼（老工学楼）和理学楼，都是武大最具标志性的建筑。左边是人文馆，一座现代气息浓厚的人文大厦，右边是梅园小操场，武大的开学典礼，每周五的电影都在这里。由于优越的地理位置，加上背靠珞珈山清新的空气，常年吸引着众多武大学子来此锻炼、散步。
+        晚上常常能够听到笛箫协会在此练音，虽不太流畅，却也是奥场一道独特的风景。
+    </span>
+<img src="https://s3.ax1x.com/2020/12/03/DHpQN4.jpg" id="aochang_bg" style="display: none;"/>
+<img src="https://s3.ax1x.com/2020/12/03/DHpuHU.png" id="aochang_player" style="display: none;"/>
+<img src="https://s3.ax1x.com/2020/12/03/DHpl4J.png" id="aochang_target" style="display: none;"/>
+<img src="https://s3.ax1x.com/2020/12/03/DHpMEF.png" id="aochang_intro" style="display: none;"/>
+<canvas id="game" class="hidden" onmousedown="mousedown(event)" onmouseup="mouseup(event)" onmouseout="mouseout(event)"
+        onmousemove="mousemove(event)">
+</canvas>
+<script src="../jquery/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+<script src="../jquery/aochang.js" type="text/javascript"></script>
+</body>
+</html>
