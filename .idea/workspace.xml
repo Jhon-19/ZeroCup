@@ -23,7 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="921b8bc1-3416-456a-8b63-b616acfddb7e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/ZeroCup.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ZeroCup.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/jquery/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/jquery/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +47,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:\Jetbrains\IntelliJ IDEA 2020.1.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -71,7 +80,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -80,17 +89,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="main.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ZeroCup/src/main/resources/static/htmls/main.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -127,6 +125,7 @@
       <workItem from="1607054668649" duration="7522000" />
       <workItem from="1607062817872" duration="79000" />
       <workItem from="1607062950597" duration="8296000" />
+      <workItem from="1607083119668" duration="426000" />
     </task>
     <servers />
   </component>
@@ -162,10 +161,11 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="434" height="438" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1607059064992" />
-    <state x="421" y="81" key="FileChooserDialogImpl" timestamp="1606052316662">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="474" y="114" key="FileChooserDialogImpl" timestamp="1607082797165">
+      <screen x="0" y="0" width="1440" height="960" />
     </state>
     <state x="421" y="81" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606052316662" />
+    <state x="474" y="114" key="FileChooserDialogImpl/0.0.1440.960@0.0.1440.960" timestamp="1607082797165" />
     <state width="619" height="163" key="GridCell.Tab.0.bottom" timestamp="1607062321336">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -230,10 +230,15 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="619" height="198" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1606033231798" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1606571767822">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="251" y="135" key="Maven.ArtifactSearchDialog" timestamp="1607083130039">
+      <screen x="0" y="0" width="1440" height="960" />
+    </state>
+    <state x="251" y="135" key="Maven.ArtifactSearchDialog/0.0.1440.960@0.0.1440.960" timestamp="1607083130039" />
+    <state x="160" y="0" key="SettingsEditor" timestamp="1607082799901">
+      <screen x="0" y="0" width="1440" height="960" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1606571767822" />
+    <state x="160" y="0" key="SettingsEditor/0.0.1440.960@0.0.1440.960" timestamp="1607082799901" />
     <state x="185" y="69" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1606035969189">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

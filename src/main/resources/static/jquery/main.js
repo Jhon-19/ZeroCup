@@ -17,12 +17,15 @@ var laoZhaiSheB
 //地图
 var map
 
-var isAllFinished
+var finishCount
 // 五朵花
 var flo1, flo2, flo3, flo4, flo5
 var flos = [flo1, flo2, flo3, flo4, flo5]
 // 成功图片
 var success
+
+//
+var id
 
 //闪烁动画
 function twinkle() {
@@ -34,6 +37,22 @@ function twinkle() {
             opacity: 1
         }, 1000)
     })
+    //闯关完成
+    if (finishCount === 6) {
+        //插入结束动画
+        for(var i = 1; i < 6; i++){
+            flos[i-1] = $('#flo' + i)
+            // 一开始花瓣不飘
+            flos[i-1].css('animation-play-state', 'running')
+            document.styleSheets[0].addRule('#flo'+i+'::after',
+                'animation-play-state:' + 'running !important');
+        }
+        success.animate({
+            opacity: 1
+        }, 1500)
+
+        clearInterval(id)
+    }
 }
 
 //请求数据
@@ -48,37 +67,37 @@ function getAll() {
                         if (item) {
                             paiFang.css('display', 'none')
                         }
-                        isAllFinished = isAllFinished && item
+                        finishCount++
                         break
                     case("aoChang"):
                         if (item) {
                             aoChang.css('display', 'none')
                         }
-                        isAllFinished = isAllFinished && item
+                        finishCount++
                         break
                     case("yingDing"):
                         if (item) {
                             yingDing.css('display', 'none')
                         }
-                        isAllFinished = isAllFinished && item
+                        finishCount++
                         break
                     case("laoTu"):
                         if (item) {
                             laoTu.css('display', 'none')
                         }
-                        isAllFinished = isAllFinished && item
+                        finishCount++
                         break
                     case("wanLin"):
                         if (item) {
                             wanLin.css('display', 'none')
                         }
-                        isAllFinished = isAllFinished && item
+                        finishCount++
                         break
                     case("laoZhaiShe"):
                         if (item) {
                             laoZhaiShe.css('display', 'none')
                         }
-                        isAllFinished = isAllFinished && item
+                        finishCount++
                         break
                 }
             })
@@ -88,7 +107,7 @@ function getAll() {
 
 $(document).ready(function () {
 
-    isAllFinished = true//判断是否闯关成功
+    finishCount = 0//判断是否闯关成功
 
     //初始化各变量
     paiFang = $('#twinkle4')
@@ -319,55 +338,42 @@ $(document).ready(function () {
 
     })
 
-    setTimeout(function (){
-        //闯关完成
-        if (isAllFinished) {
-            //插入结束动画
-            for(var i = 1; i < 6; i++){
-                flos[i-1] = $('#flo' + i)
-                // 一开始花瓣不飘
-                flos[i-1].css('animation-play-state', 'running')
-                document.styleSheets[0].addRule('#flo'+i+'::after',
-                    'animation-play-state:' + 'running !important');
-            }
-            success.animate({
-                opacity: 1
-            }, 1500)
-        } else {
-            var id = setInterval(twinkle, 2000)
+    id = setInterval(twinkle, 2000)
 
-            //为各地点添加点击事件
-            paiFang.click(function () {
-                clearInterval(id)
-                $(location).attr('href', 'paifang.html')
-            })
+    //为各地点添加点击事件
+    paiFang.click(function () {
+        clearInterval(id)
+        $(location).attr('href', 'paifang.html')
+    })
 
-            aoChang.click(function () {
-                clearInterval(id)
-                $(location).attr('href', 'aoChang.html')
-            })
+    aoChang.click(function () {
+        clearInterval(id)
+        $(location).attr('href', 'aoChang.html')
+    })
 
-            yingDing.click(function () {
-                clearInterval(id)
-                $(location).attr('href', 'yingding.html')
-            })
+    yingDing.click(function () {
+        clearInterval(id)
+        $(location).attr('href', 'yingding.html')
+    })
 
-            laoTu.click(function () {
-                clearInterval(id)
-                $(location).attr('href', 'laotu.html')
-            })
+    laoTu.click(function () {
+        clearInterval(id)
+        $(location).attr('href', 'laotu.html')
+    })
 
-            wanLin.click(function () {
-                clearInterval(id)
-                $(location).attr('href', 'wanlin.html')
-            })
+    wanLin.click(function () {
+        clearInterval(id)
+        $(location).attr('href', 'wanlin.html')
+    })
 
-            laoZhaiShe.click(function () {
-                clearInterval(id)
-                $(location).attr('href', 'laozhaishe.html')
-            })
-        }
-    }, 1000)
+    laoZhaiShe.click(function () {
+        clearInterval(id)
+        $(location).attr('href', 'laozhaishe.html')
+    })
+
+    // setTimeout(function (){
+    //
+    // }, 1000)
 
 
 })
