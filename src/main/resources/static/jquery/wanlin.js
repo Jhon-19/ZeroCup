@@ -206,6 +206,9 @@ function showPreview() {
 
     var id
     var index = 0
+    const paths=['https://s3.ax1x.com/2020/12/03/DH9eGd.jpg',
+        'https://s3.ax1x.com/2020/12/03/DH9nxI.jpg',
+        'https://s3.ax1x.com/2020/12/03/DH9mRA.jpg']
     setTimeout(function () {
         introduceText.css('display', 'none')
         //显示各按钮
@@ -218,16 +221,17 @@ function showPreview() {
             if (index >= 3) {
                 index = index % 3
             }
-            var path = 'url("../images/WanlinPics/background' + index + '.jpg")'
+            var path = paths[index];
+            console.log(path)
             $('#backgroundImage').animate({
-                opacity: 0.75
-            }, 1000)
+                opacity: 0.5
+            }, 2500)
             setTimeout(function () {
+                $('#backgroundImage').css('background-image', 'url('+path+')')
                 $('#backgroundImage').animate({
                     opacity: 1
-                }, 1000)
-                $('#backgroundImage').css('background-image', path)
-            }, 1000)
+                }, 2500)
+            }, 2500)
         }, 5000)
     }, 1000)
     //为各按钮添加点击事件
